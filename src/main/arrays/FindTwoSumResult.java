@@ -8,12 +8,7 @@ import java.util.Map;
 
 public class FindTwoSumResult {
 	public static int[] twoSum(int[] nums, int target) {
-		// same element not repeat
-		// two elements index
-
-		// element order can be any way
-
-		// sort to iterate one way
+		// hashMap is used to avoid o(n2) search and produce o(n) constant time search
 		Map<Integer, List<Integer>> map = new HashMap<>(nums.length, 1f);
 		int res[] = new int[2];
 		int i = 0;
