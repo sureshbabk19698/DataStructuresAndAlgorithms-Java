@@ -6,10 +6,11 @@ import java.util.Map;
 public class LengthOfLongSubstringWithoutRepeatingCharacter {
 	public static int lengthOfLongestSubstring(String s) {
 		// iterate and store in map
-		// check if already present if same char came , streak broken
-		// reset Map take the count once streak is broken and return max
+		// check if already present if same char came , then streak is broken
+		// 1. find streak broken index
+		// 2. take the difference between last streak broken index and current , set max length 
 
-		Map<Character, Integer> uniqueCharIndexmap = new HashMap<>(256);
+		Map<Character, Integer> uniqueCharIndexmap = new HashMap<>();
 
 		int length = 0;
 
