@@ -1,4 +1,4 @@
-package ProgrammingSkills4;
+package arrays;
 
 import java.util.Arrays;
 
