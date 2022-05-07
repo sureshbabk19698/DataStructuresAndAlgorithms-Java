@@ -1,6 +1,6 @@
-package ProblemSolving;
+package strings;
 
-public class FindLongestPrefix {
+public class FindLongestCommonPrefix {
 	public String longestCommonPrefix(String[] strs) {
 		// handled rare case
 		if (strs.length == 1) {
@@ -42,7 +42,7 @@ public class FindLongestPrefix {
 	}
 
 	public static void main(String[] args) {
-		FindLongestPrefix flp = new FindLongestPrefix();
+		FindLongestCommonPrefix flp = new FindLongestCommonPrefix();
 		System.out.println(flp.longestCommonPrefix(new String[] { "flower", "flow", "flight" }));
 		System.out.println(flp.longestCommonPrefix(new String[] { "dog", "racecar", "car" }));
 
