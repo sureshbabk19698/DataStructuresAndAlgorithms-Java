@@ -6,6 +6,21 @@ import java.util.List;
 import java.util.TreeMap;
 
 public class ItemsInClosedContainer {
+	
+	/**
+	 * Find items '*' inside closed container '|', between given start and end
+	 * indices. 
+	 * 
+	 * Eg 1: start index = 1 and end index = 4 , String s = "|**|"
+	 * then 2 items present between 1 and 4
+	 * 
+	 * Eg 2: start index = 1 and end index = 5 , String s = "|**|*"
+	 * then 2 items present between 1 and 5, 
+	 * reason : last item '*' is not considered, since its not closed by '|'
+	 * 
+	 * Note : Items denoted as '*' and open/close container denoted as '|'
+	 * Constraint : Atleast one open/close '|' container will be present
+	 */
 
 	public static List<Integer> numberOfItems(String s, List<Integer> startIndices, List<Integer> endIndices) {
 		List<Integer> result = new ArrayList<>();
