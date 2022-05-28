@@ -13,11 +13,10 @@ public class TwoDArrayColumnRightShift {
 		}
 
 		// copy of first column
-		for (int col = 0; col < 1; col++) {
-			for (int row = 0; row < arr.length; row++) {
-				temp[row] = arr[row][col];
-			}
+		for (int row = 0; row < arr.length; row++) {
+			temp[row] = arr[row][0];
 		}
+
 		for (int i = 1; i <= noOfShifts; i++) {
 			for (int col = 1; col < arr[i].length; col++) {
 				for (int row = 0; row < arr.length; row++) {
@@ -27,11 +26,9 @@ public class TwoDArrayColumnRightShift {
 				}
 			}
 
-			// last iteration per shift
-			for (int col = 0; col < 1; col++) {
-				for (int row = 0; row < arr.length; row++) {
-					arr[row][col] = temp[row];
-				}
+			// replacing first column in every row (arr[row][0]) with temp(last column array value)
+			for (int row = 0; row < arr.length; row++) {
+				arr[row][0] = temp[row];
 			}
 		}
 
