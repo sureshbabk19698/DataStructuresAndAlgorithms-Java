@@ -30,8 +30,8 @@ public class MaxArea {
 
 	public static void main(String[] args) {
 		MaxArea mx = new MaxArea();
-		System.out.println(mx.maxArea(new int[] { 3, 9, 3, 4, 7, 2, 12, 6 }));
-		System.out.println(mx.maxArea(new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 }));
-		System.out.println(mx.maxArea(new int[] { 1, 1 }));
+		System.out.println(mx.maxArea(new int[] { 3, 9, 3, 4, 7, 2, 12, 6 })); // 45
+		System.out.println(mx.maxArea(new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 })); // 49
+		System.out.println(mx.maxArea(new int[] { 1, 1 })); // 1
 	}
 }
