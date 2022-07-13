@@ -1,4 +1,4 @@
-package arrays;
+package easy;
 
 public class ClimbStairs {
 
@@ -22,15 +22,16 @@ public class ClimbStairs {
 		ClimbStairs cs = new ClimbStairs();
 		// 1 step + 1 step
 		// 2 step
-		System.out.println(cs.climbStairs(2));
+		System.out.println(cs.climbStairs(2)); // 2
 		// 1 step + 1 step + 1 step
 		// 2 step + 1 step
 		// 1 step + 2 step
-		System.out.println(cs.climbStairs(3));
+		System.out.println(cs.climbStairs(3)); // 3
 		// 1 step + 1 step + 1 step + 1 step
-		// 2 step + 1 step + 2 step
+		// 1 step + 1 step + 2 step
 		// 1 step + 2 step + 1 step
 		// 2 step + 1 step + 1 step
-		System.out.println(cs.climbStairs(4));
+		// 2 step + 2 step
+		System.out.println(cs.climbStairs(4)); // 5
 	}
 }
